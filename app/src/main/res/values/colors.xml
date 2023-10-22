@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="purple">#854C8F</color>
+    <color name="ocean_blue">#44A9C2</color>
+    <color name="ocean_blue_darker">#66DCEA</color>
+    <color name="img_blue">#6DC0D2</color>
+    <color name="dark_blue">#2479C2</color>
+    <color name="bg_color">#EDD5EC</color>
+    <color name="menu_card_color">#D1B5D1</color>
+    <color name="light_blue">#CDE7EE</color>
+</resources>

@@ -1,0 +1,1109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:textAlignment="center"
+    tools:context=".FoodFragment"
+    android:background="@color/bg_color">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginEnd="0dp"
+        android:overScrollMode="never"
+        android:scrollbars="vertical"
+        tools:ignore="UselessParent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="match_parent"
+                android:layout_height="174dp"
+                android:background="@color/img_blue"
+                android:importantForAccessibility="no"
+                android:src="@drawable/manu_img"
+                tools:ignore="ImageContrastCheck" />
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="match_parent"
+                android:layout_height="61dp"
+                android:layout_marginTop="-156dp"
+                android:layout_marginBottom="100dp"
+                android:fontFamily="@font/alfa_slab_one"
+                android:text="@string/str_menu"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="38sp"
+                tools:ignore="TextSizeCheck,TextContrastCheck" />
+
+            <TextView
+                android:id="@+id/textView7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Zamówienia online"
+                android:textAlignment="center"
+                android:textAllCaps="true"
+                android:textColor="@color/ocean_blue"
+                android:textSize="20sp"
+                android:layout_marginTop="10dp"
+                tools:ignore="HardcodedText,TextContrastCheck" />
+
+            <TextView
+                android:id="@+id/textView8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/coiny"
+                android:text="nasze menu :)"
+                android:textAlignment="center"
+                android:textAllCaps="true"
+                android:textColor="@color/black"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                tools:ignore="HardcodedText" />
+
+            <TextView
+                android:id="@+id/textView9"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:layout_marginTop="10dp"
+                android:paddingHorizontal="40dp"
+                android:text="PAMIĘTAJ BY ZACHOWAĆ BEZPIECZEŃSTWO, WYBIERZ BEZKONTAKTOWĄ FORMĘ ZAMÓWIENIA Z PŁATNOŚCIĄ ONLINE "
+                android:textAlignment="center"
+                android:textAllCaps="true"
+                android:textColor="@color/black"
+                android:textSize="12sp"
+                tools:ignore="HardcodedText" />
+
+<!--        Zestawy - text -->
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                app:cardBackgroundColor="@color/bg_color"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="20dp"
+                app:contentPaddingLeft="20dp"
+                app:contentPaddingTop="5dp"
+                app:contentPaddingBottom="5dp">
+
+                <TextView
+                    android:id="@+id/textView102"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Zestawy"
+                    android:textColor="@color/black"
+                    android:textSize="24sp"
+                    android:textStyle="bold"
+                    tools:ignore="HardcodedText" />
+
+            </androidx.cardview.widget.CardView>
+<!--        =========    -->
+
+<!--        ZESTAWY - cards    -->
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                app:cardBackgroundColor="@color/menu_card_color"
+                android:layout_marginBottom="10dp"
+                app:contentPaddingLeft="15dp"
+                app:contentPaddingTop="5dp"
+                app:contentPaddingBottom="5dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp">
+
+                <TextView
+                    android:id="@+id/textView10"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Zestaw 1."
+                    android:textColor="@color/black"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    tools:ignore="HardcodedText" />
+
+                <TextView
+                    android:id="@+id/textView11"
+                    android:layout_marginTop="20dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="- tempura futo roll 5szt"
+                    android:textColor="@color/black"
+                    android:textSize="14sp"
+                    tools:ignore="HardcodedText" />
+                <TextView
+                    android:id="@+id/textView12"
+                    android:layout_marginTop="35dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="- hosomaki z kampyo zapieczone w temurze 8szt"
+                    android:textColor="@color/black"
+                    android:textSize="14sp"
+                    tools:ignore="HardcodedText" />
+                <TextView
+                    android:id="@+id/textView13"
+                    android:layout_marginTop="50dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="- nigiri z łososiem 2szt"
+                    android:textColor="@color/black"
+                    android:textSize="14sp"
+                    tools:ignore="HardcodedText" />
+
+                <Button
+                    android:id="@+id/button2"
+                    android:layout_width="100dp"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="70dp"
+                    android:text="35,00 zł"
+                    tools:ignore="HardcodedText,TouchTargetSizeCheck,DuplicateSpeakableTextCheck" />
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                app:cardBackgroundColor="@color/menu_card_color"
+                android:layout_marginBottom="10dp"
+                app:contentPaddingLeft="15dp"
+                app:contentPaddingTop="5dp"
+                app:contentPaddingBottom="5dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp">
+
+                <TextView
+                    android:id="@+id/textView14"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Zestaw 2."
+                    android:textColor="@color/black"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    tools:ignore="HardcodedText" />
+
+                <TextView
+                    android:id="@+id/textView15"
+                    android:layout_marginTop="20dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="- philadelphia roll 5szt"
+                    android:textColor="@color/black"
+                    android:textSize="14sp"
+                    tools:ignore="HardcodedText" />
+                <TextView
+                    android:id="@+id/textView16"
+                    android:layout_marginTop="35dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="- hosomaki z ogórkiem i serkiem 8szt"
+                    android:textColor="@color/black"
+                    android:textSize="14sp"
+                    tools:ignore="HardcodedText" />
+                <TextView
+                    android:id="@+id/textView17"
+                    android:layout_marginTop="50dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="- nigiri z łososiem 2szt"
+                    android:textColor="@color/black"
+                    android:textSize="14sp"
+                    tools:ignore="HardcodedText" />
+
+                <Button
+                    android:id="@+id/button3"
+                    android:layout_width="100dp"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="70dp"
+                    android:text="35,00 zł"
+                    tools:ignore="HardcodedText,TouchTargetSizeCheck" />
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                app:cardBackgroundColor="@color/menu_card_color"
+                android:layout_marginBottom="10dp"
+                app:contentPaddingLeft="15dp"
+                app:contentPaddingTop="5dp"
+                app:contentPaddingBottom="5dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp">
+
+                <TextView
+                    android:id="@+id/textView18"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Zestaw 3."
+                    android:textColor="@color/black"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    tools:ignore="HardcodedText" />
+
+                <TextView
+                    android:id="@+id/textView19"
+                    android:layout_marginTop="20dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="- california gold snake roll 5szt"
+                    android:textColor="@color/black"
+                    android:textSize="14sp"
+                    tools:ignore="HardcodedText" />
+                <TextView
+                    android:id="@+id/textView20"
+                    android:layout_marginTop="35dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="- hosomaki z kampyo zapieczone w temurze 8szt"
+                    android:textColor="@color/black"
+                    android:textSize="14sp"
+                    tools:ignore="HardcodedText" />
+                <TextView
+                    android:id="@+id/textView21"
+                    android:layout_marginTop="50dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="- nigiri z łososiem 2szt"
+                    android:textColor="@color/black"
+                    android:textSize="14sp"
+                    tools:ignore="HardcodedText" />
+
+                <Button
+                    android:id="@+id/button4"
+                    android:layout_width="100dp"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="70dp"
+                    android:text="35,00 zł"
+                    tools:ignore="HardcodedText"/>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                app:cardBackgroundColor="@color/menu_card_color"
+                android:layout_marginBottom="10dp"
+                app:contentPaddingLeft="15dp"
+                app:contentPaddingTop="5dp"
+                app:contentPaddingBottom="5dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp">
+
+                <TextView
+                    android:id="@+id/textView22"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Zestaw 4."
+                    android:textColor="@color/black"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    tools:ignore="HardcodedText" />
+
+                <TextView
+                    android:id="@+id/textView23"
+                    android:layout_marginTop="20dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="- ebi tempura roll 5szt"
+                    android:textColor="@color/black"
+                    android:textSize="14sp"
+                    tools:ignore="HardcodedText" />
+                <TextView
+                    android:id="@+id/textView24"
+                    android:layout_marginTop="35dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="- hosomaki z kampyo zapieczone w temurze 8szt"
+                    android:textColor="@color/black"
+                    android:textSize="14sp"
+                    tools:ignore="HardcodedText" />
+                <TextView
+                    android:id="@+id/textView25"
+                    android:layout_marginTop="50dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="- nigiri z łososiem 2szt"
+                    android:textColor="@color/black"
+                    android:textSize="14sp"
+                    tools:ignore="HardcodedText" />
+
+                <Button
+                    android:id="@+id/button5"
+                    android:layout_width="100dp"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="70dp"
+                    android:text="35,00 zł"
+                    tools:ignore="HardcodedText"/>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="124dp"
+                app:cardBackgroundColor="@color/menu_card_color"
+                android:layout_marginBottom="10dp"
+                app:contentPaddingLeft="15dp"
+                app:contentPaddingTop="5dp"
+                app:contentPaddingBottom="5dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp">
+
+                <TextView
+                    android:id="@+id/textView26"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Zestaw 5."
+                    android:textColor="@color/black"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    tools:ignore="HardcodedText" />
+
+                <TextView
+                    android:id="@+id/textView27"
+                    android:layout_marginTop="20dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="- vegetarian tempura roll 5szt"
+                    android:textColor="@color/black"
+                    android:textSize="14sp"
+                    tools:ignore="HardcodedText" />
+                <TextView
+                    android:id="@+id/textView28"
+                    android:layout_marginTop="35dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="- hosomaki z ogórkiem i serkiem 8szt"
+                    android:textColor="@color/black"
+                    android:textSize="14sp"
+                    tools:ignore="HardcodedText" />
+                <TextView
+                    android:id="@+id/textView29"
+                    android:layout_marginTop="50dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="- nigiri z awokado 2szt"
+                    android:textColor="@color/black"
+                    android:textSize="14sp"
+                    tools:ignore="HardcodedText" />
+
+                <Button
+                    android:id="@+id/button6"
+                    android:layout_width="100dp"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="70dp"
+                    android:text="35,00 zł"
+                    tools:ignore="HardcodedText"/>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="135dp"
+                app:cardBackgroundColor="@color/menu_card_color"
+                android:layout_marginBottom="10dp"
+                app:contentPaddingLeft="15dp"
+                app:contentPaddingTop="5dp"
+                app:contentPaddingBottom="5dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp">
+
+                <TextView
+                    android:id="@+id/textView30"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Maki get 38szt."
+                    android:textColor="@color/black"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    tools:ignore="HardcodedText" />
+
+                <TextView
+                    android:id="@+id/textView31"
+                    android:layout_marginTop="20dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="- 12x Ebi Futomak Roll"
+                    android:textColor="@color/black"
+                    android:textSize="14sp"
+                    tools:ignore="HardcodedText" />
+                <TextView
+                    android:id="@+id/textView32"
+                    android:layout_marginTop="35dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="- 12x Philadelphia Roll"
+                    android:textColor="@color/black"
+                    android:textSize="14sp"
+                    tools:ignore="HardcodedText" />
+                <TextView
+                    android:id="@+id/textView33"
+                    android:layout_marginTop="50dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="- 6x Hosomak z łososiem w tempurze"
+                    android:textColor="@color/black"
+                    android:textSize="14sp"
+                    tools:ignore="HardcodedText" />
+                <TextView
+                    android:id="@+id/textView34"
+                    android:layout_marginTop="65dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="- 6x Hosomak Kampyo"
+                    android:textColor="@color/black"
+                    android:textSize="14sp"
+                    tools:ignore="HardcodedText" />
+
+                <Button
+                    android:id="@+id/button7"
+                    android:layout_width="100dp"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="85dp"
+                    android:text="139,00 zł"
+                    tools:ignore="HardcodedText"/>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="135dp"
+                app:cardBackgroundColor="@color/menu_card_color"
+                android:layout_marginBottom="10dp"
+                app:contentPaddingLeft="15dp"
+                app:contentPaddingTop="5dp"
+                app:contentPaddingBottom="5dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp">
+
+                <TextView
+                    android:id="@+id/textView35"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Sakura Set 48szt."
+                    android:textColor="@color/black"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    tools:ignore="HardcodedText" />
+
+                <TextView
+                    android:id="@+id/textView36"
+                    android:layout_marginTop="20dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="- 8x Snake Dragon Roll"
+                    android:textColor="@color/black"
+                    android:textSize="14sp"
+                    tools:ignore="HardcodedText" />
+                <TextView
+                    android:id="@+id/textView37"
+                    android:layout_marginTop="35dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="- 10x Maguro Futomak Roll w panko"
+                    android:textColor="@color/black"
+                    android:textSize="14sp"
+                    tools:ignore="HardcodedText" />
+                <TextView
+                    android:id="@+id/textView38"
+                    android:layout_marginTop="50dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="- 8x Ebi Sake Roll"
+                    android:textColor="@color/black"
+                    android:textSize="14sp"
+                    tools:ignore="HardcodedText" />
+                <TextView
+                    android:id="@+id/textView39"
+                    android:layout_marginTop="65dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="- 6x Nigiri"
+                    android:textColor="@color/black"
+                    android:textSize="14sp"
+                    tools:ignore="HardcodedText" />
+
+                <Button
+                    android:id="@+id/button8"
+                    android:layout_width="100dp"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="85dp"
+                    android:text="199,00 zł"
+                    tools:ignore="HardcodedText"/>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="135dp"
+                app:cardBackgroundColor="@color/menu_card_color"
+                android:layout_marginBottom="10dp"
+                app:contentPaddingLeft="15dp"
+                app:contentPaddingTop="5dp"
+                app:contentPaddingBottom="5dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp">
+
+                <TextView
+                    android:id="@+id/textView40"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Spring Set 50szt."
+                    android:textColor="@color/black"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    tools:ignore="HardcodedText" />
+
+                <TextView
+                    android:id="@+id/textView41"
+                    android:layout_marginTop="20dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="- 12x Snake Sprong Roll"
+                    android:textColor="@color/black"
+                    android:textSize="14sp"
+                    tools:ignore="HardcodedText" />
+                <TextView
+                    android:id="@+id/textView42"
+                    android:layout_marginTop="35dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="- 12x Maguro Spring Roll"
+                    android:textColor="@color/black"
+                    android:textSize="14sp"
+                    tools:ignore="HardcodedText" />
+                <TextView
+                    android:id="@+id/textView43"
+                    android:layout_marginTop="50dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="- 12x New York Roll"
+                    android:textColor="@color/black"
+                    android:textSize="14sp"
+                    tools:ignore="HardcodedText" />
+                <TextView
+                    android:id="@+id/textView44"
+                    android:layout_marginTop="65dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="- 12x Unagi Futomak Roll"
+                    android:textColor="@color/black"
+                    android:textSize="14sp"
+                    tools:ignore="HardcodedText" />
+
+                <Button
+                    android:id="@+id/button9"
+                    android:layout_width="100dp"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="85dp"
+                    android:text="199,00 zł"
+                    tools:ignore="HardcodedText"/>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="135dp"
+                app:cardBackgroundColor="@color/menu_card_color"
+                android:layout_marginBottom="10dp"
+                app:contentPaddingLeft="15dp"
+                app:contentPaddingTop="5dp"
+                app:contentPaddingBottom="5dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp">
+
+                <TextView
+                    android:id="@+id/textView45"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Chef Set 54szt."
+                    android:textColor="@color/black"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    tools:ignore="HardcodedText" />
+
+                <TextView
+                    android:id="@+id/textView46"
+                    android:layout_marginTop="20dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="- 14x SANDWITCH ROLL"
+                    android:textColor="@color/black"
+                    android:textSize="14sp"
+                    tools:ignore="HardcodedText" />
+                <TextView
+                    android:id="@+id/textView47"
+                    android:layout_marginTop="35dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="- 12x MAGURO KIMCHI"
+                    android:textColor="@color/black"
+                    android:textSize="14sp"
+                    tools:ignore="HardcodedText" />
+                <TextView
+                    android:id="@+id/textView48"
+                    android:layout_marginTop="50dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="- 12x EBI LICHI"
+                    android:textColor="@color/black"
+                    android:textSize="14sp"
+                    tools:ignore="HardcodedText" />
+                <TextView
+                    android:id="@+id/textView49"
+                    android:layout_marginTop="65dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="- 12x PEANUT DREAM ROLL"
+                    android:textColor="@color/black"
+                    android:textSize="14sp"
+                    tools:ignore="HardcodedText" />
+
+                <Button
+                    android:id="@+id/button10"
+                    android:layout_width="100dp"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="85dp"
+                    android:text="239,00 zł"
+                    tools:ignore="HardcodedText"/>
+
+            </androidx.cardview.widget.CardView>
+<!--        =========    -->
+
+
+<!--        Zupy - Text  -->
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                app:cardBackgroundColor="@color/bg_color"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                app:contentPaddingLeft="20dp"
+                app:contentPaddingTop="5dp"
+                app:contentPaddingBottom="5dp">
+
+                <TextView
+                    android:id="@+id/textView100"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Zupy"
+                    android:textColor="@color/black"
+                    android:textSize="24sp"
+                    android:textStyle="bold"
+                    tools:ignore="HardcodedText" />
+
+            </androidx.cardview.widget.CardView>
+<!--        =========    -->
+
+<!--        ZUPY - cards    -->
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="105dp"
+                app:cardBackgroundColor="@color/menu_card_color"
+                android:layout_marginBottom="10dp"
+                app:contentPaddingLeft="15dp"
+                app:contentPaddingTop="5dp"
+                app:contentPaddingBottom="5dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp">
+
+                <TextView
+                    android:id="@+id/textView50"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Miso Wege 500 ml"
+                    android:textColor="@color/black"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    tools:ignore="HardcodedText" />
+
+                <TextView
+                    android:id="@+id/textView51"
+                    android:layout_marginTop="20dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="- tradycyjny japoński bulion na bazie pasty sojowej z tofu i wakame"
+                    android:textColor="@color/black"
+                    android:textSize="14sp"
+                    tools:ignore="HardcodedText" />
+
+                <Button
+                    android:id="@+id/butto11"
+                    android:layout_width="100dp"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="55dp"
+                    android:text="19,00 zł"
+                    tools:ignore="HardcodedText"/>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                app:cardBackgroundColor="@color/menu_card_color"
+                android:layout_marginBottom="10dp"
+                app:contentPaddingLeft="15dp"
+                app:contentPaddingTop="5dp"
+                app:contentPaddingBottom="5dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp">
+
+                <TextView
+                    android:id="@+id/textView53"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Zupa Kimchi 750 ml"
+                    android:textColor="@color/black"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    tools:ignore="HardcodedText" />
+
+                <TextView
+                    android:id="@+id/textView54"
+                    android:layout_marginTop="20dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="- bulion wołowy z pikantną fermentowaną kapustą pekińską z makaronem ramen własnej produkcji i marynowaną wołowiną z wooka"
+                    android:textColor="@color/black"
+                    android:textSize="14sp"
+                    tools:ignore="HardcodedText,VisualLintLongText" />
+
+                <Button
+                    android:id="@+id/butto12"
+                    android:layout_width="100dp"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="70dp"
+                    android:text="19,00 zł"
+                    tools:ignore="HardcodedText"/>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="105dp"
+                app:cardBackgroundColor="@color/menu_card_color"
+                android:layout_marginBottom="10dp"
+                app:contentPaddingLeft="15dp"
+                app:contentPaddingTop="5dp"
+                app:contentPaddingBottom="5dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp">
+
+                <TextView
+                    android:id="@+id/textView55"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Miso z Łososiem 500 ml"
+                    android:textColor="@color/black"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    tools:ignore="HardcodedText,TooManyViews" />
+
+                <TextView
+                    android:id="@+id/textView56"
+                    android:layout_marginTop="20dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="- tradycyjny japoński bulion na bazie pasty sojowej z łososiem i wakame"
+                    android:textColor="@color/black"
+                    android:textSize="14sp"
+                    tools:ignore="HardcodedText" />
+
+                <Button
+                    android:id="@+id/butto13"
+                    android:layout_width="100dp"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="55dp"
+                    android:text="25,00 zł"
+                    tools:ignore="HardcodedText"/>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                app:cardBackgroundColor="@color/menu_card_color"
+                android:layout_marginBottom="10dp"
+                app:contentPaddingLeft="15dp"
+                app:contentPaddingTop="5dp"
+                app:contentPaddingBottom="5dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp">
+
+                <TextView
+                    android:id="@+id/textView58"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Beef Ramen 750 ml"
+                    android:textColor="@color/black"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    tools:ignore="HardcodedText" />
+
+                <TextView
+                    android:id="@+id/textView57"
+                    android:layout_marginTop="20dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="- aromatyczny bulion wołowy z makaronem ramen własnej produkcji, jajkiem, warzywami i wołowiną z wooka"
+                    android:textColor="@color/black"
+                    android:textSize="14sp"
+                    tools:ignore="HardcodedText" />
+
+                <Button
+                    android:id="@+id/butto14"
+                    android:layout_width="100dp"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="70dp"
+                    android:text="25,00 zł"
+                    tools:ignore="HardcodedText"/>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="105dp"
+                app:cardBackgroundColor="@color/menu_card_color"
+                android:layout_marginBottom="10dp"
+                app:contentPaddingLeft="15dp"
+                app:contentPaddingTop="5dp"
+                app:contentPaddingBottom="5dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp">
+
+                <TextView
+                    android:id="@+id/textView59"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Sea Food Ramen 750 ml"
+                    android:textColor="@color/black"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    tools:ignore="HardcodedText" />
+
+                <TextView
+                    android:id="@+id/textView60"
+                    android:layout_marginTop="20dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="-  delikatna bulion rybny z makaronem ramen własnej produkcji, jajkiem, warzywami i owocami morza"
+                    android:textColor="@color/black"
+                    android:textSize="14sp"
+                    tools:ignore="HardcodedText" />
+
+                <Button
+                    android:id="@+id/butto15"
+                    android:layout_width="100dp"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="55dp"
+                    android:text="45,00 zł"
+                    tools:ignore="HardcodedText"/>
+
+            </androidx.cardview.widget.CardView>
+<!--        =========    -->
+
+<!--        Dodatki - text     -->
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                app:cardBackgroundColor="@color/bg_color"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                app:contentPaddingLeft="20dp"
+                app:contentPaddingTop="5dp"
+                app:contentPaddingBottom="5dp">
+
+                <TextView
+                    android:id="@+id/textView101"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Dodatki"
+                    android:textColor="@color/black"
+                    android:textSize="24sp"
+                    android:textStyle="bold"
+                    tools:ignore="HardcodedText" />
+
+            </androidx.cardview.widget.CardView>
+<!--        =========    -->
+
+<!--        DODATKI - cards    -->
+            <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            app:cardBackgroundColor="@color/menu_card_color"
+            android:layout_marginBottom="10dp"
+            app:contentPaddingLeft="15dp"
+            app:contentPaddingTop="5dp"
+            app:contentPaddingBottom="5dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp">
+
+            <TextView
+                android:id="@+id/textView62"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Dodatkowe Wasabi 50g"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                tools:ignore="HardcodedText" />
+
+            <Button
+                android:id="@+id/butto17"
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="20dp"
+                android:text="5,00 zł"
+                tools:ignore="HardcodedText"/>
+
+        </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="65dp"
+                app:cardBackgroundColor="@color/menu_card_color"
+                android:layout_marginBottom="10dp"
+                app:contentPaddingLeft="15dp"
+                app:contentPaddingTop="5dp"
+                app:contentPaddingBottom="5dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp">
+
+                <TextView
+                    android:id="@+id/textView63"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Sos Sojowy 15ml"
+                    android:textColor="@color/black"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    tools:ignore="HardcodedText" />
+
+                <Button
+                    android:id="@+id/button18"
+                    android:layout_width="100dp"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="20dp"
+                    android:text="2,00 zł"
+                    tools:ignore="HardcodedText"/>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="65dp"
+                app:cardBackgroundColor="@color/menu_card_color"
+                android:layout_marginBottom="10dp"
+                app:contentPaddingLeft="15dp"
+                app:contentPaddingTop="5dp"
+                app:contentPaddingBottom="5dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp">
+
+                <TextView
+                    android:id="@+id/textView64"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Sos Unagi 15ml"
+                    android:textColor="@color/black"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    tools:ignore="HardcodedText" />
+
+                <Button
+                    android:id="@+id/button19"
+                    android:layout_width="100dp"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="20dp"
+                    android:text="3,00 zł"
+                    tools:ignore="HardcodedText"/>
+
+            </androidx.cardview.widget.CardView>
+<!--        =========    -->
+
+<!--        Napoje - text   -->
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                app:cardBackgroundColor="@color/bg_color"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                app:contentPaddingLeft="20dp"
+                app:contentPaddingTop="5dp"
+                app:contentPaddingBottom="5dp">
+
+                <TextView
+                    android:id="@+id/textView104"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Napoje"
+                    android:textColor="@color/black"
+                    android:textSize="24sp"
+                    android:textStyle="bold"
+                    tools:ignore="HardcodedText" />
+
+            </androidx.cardview.widget.CardView>
+<!--        =========    -->
+
+<!--        NAPOJE - cards    -->
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                app:cardBackgroundColor="@color/menu_card_color"
+                android:layout_marginBottom="10dp"
+                app:contentPaddingLeft="15dp"
+                app:contentPaddingTop="5dp"
+                app:contentPaddingBottom="5dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp">
+
+                <TextView
+                    android:id="@+id/textView65"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Woga Gazowana"
+                    android:textColor="@color/black"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    tools:ignore="HardcodedText" />
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                app:cardBackgroundColor="@color/menu_card_color"
+                android:layout_marginBottom="50dp"
+                app:contentPaddingLeft="15dp"
+                app:contentPaddingTop="5dp"
+                app:contentPaddingBottom="5dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp">
+
+                <TextView
+                    android:id="@+id/textView6"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Woga Niegazowana"
+                    android:textColor="@color/black"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    tools:ignore="HardcodedText" />
+
+            </androidx.cardview.widget.CardView>
+<!--        =========    -->
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</RelativeLayout>

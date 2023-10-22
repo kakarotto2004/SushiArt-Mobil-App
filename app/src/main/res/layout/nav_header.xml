@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="80dp"
+    android:gravity="top"
+    android:padding="10dp"
+    android:theme="@style/ThemeOverlay.AppCompat.Dark"
+    android:background="@color/ocean_blue_darker">
+
+    <ImageView
+        android:layout_width="71dp"
+        android:layout_height="59dp"
+        android:contentDescription="@string/todo"
+        android:src="@drawable/sushi_logo"
+        android:textAlignment="center" />
+
+    <TextView
+        android:layout_width="135dp"
+        android:layout_height="59dp"
+        android:gravity="center"
+        android:text="@string/sushi_art_txt"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        tools:ignore="TextSizeCheck" />
+
+</LinearLayout>
